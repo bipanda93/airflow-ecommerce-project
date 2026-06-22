@@ -1,0 +1,3 @@
+InvoiceNo,StockCode,Description,Quantity,InvoiceDate,UnitPrice,CustomerID,Country,errors
+536376,22752,SET 7 BABUSHKA NESTING BOXES,-2,2010-12-03,7.65,13748,France,Quantité nulle ou négative | Montant négatif
+536377,21730,GLASS STAR FROSTED T-LIGHT HOLDER,0,2010-12-03,4.25,15311,Allemagne,Quantité nulle ou négative

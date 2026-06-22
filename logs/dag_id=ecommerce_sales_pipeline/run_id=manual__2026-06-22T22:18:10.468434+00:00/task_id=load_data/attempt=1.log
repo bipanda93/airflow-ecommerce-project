@@ -1,0 +1,22 @@
+[2026-06-22T22:18:16.434+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-22T22:18:16.479+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecommerce_sales_pipeline.load_data manual__2026-06-22T22:18:10.468434+00:00 [queued]>
+[2026-06-22T22:18:16.493+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecommerce_sales_pipeline.load_data manual__2026-06-22T22:18:10.468434+00:00 [queued]>
+[2026-06-22T22:18:16.493+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2026-06-22T22:18:16.510+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): load_data> on 2026-06-22 22:18:10.468434+00:00
+[2026-06-22T22:18:16.518+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1638) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-22T22:18:16.520+0000] {standard_task_runner.py:63} INFO - Started process 1639 to run task
+[2026-06-22T22:18:16.521+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ecommerce_sales_pipeline', 'load_data', 'manual__2026-06-22T22:18:10.468434+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/ecommerce_sales_pipeline.py', '--cfg-path', '/tmp/tmpnx0_tuix']
+[2026-06-22T22:18:16.523+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask load_data
+[2026-06-22T22:18:16.581+0000] {task_command.py:426} INFO - Running <TaskInstance: ecommerce_sales_pipeline.load_data manual__2026-06-22T22:18:10.468434+00:00 [running]> on host e1104674939d
+[2026-06-22T22:18:16.694+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ecommerce_sales_pipeline' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2026-06-22T22:18:10.468434+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-22T22:18:10.468434+00:00'
+[2026-06-22T22:18:16.695+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-22T22:18:16.711+0000] {logging_mixin.py:188} INFO - Nb commandes       : 17
+[2026-06-22T22:18:16.712+0000] {logging_mixin.py:188} INFO - Nb clients         : 4
+[2026-06-22T22:18:16.712+0000] {logging_mixin.py:188} INFO - Chiffre d'affaires : 309.06 €
+[2026-06-22T22:18:16.713+0000] {logging_mixin.py:188} INFO - Panier moyen       : 18.18 €
+[2026-06-22T22:18:16.713+0000] {python.py:237} INFO - Done. Returned value was: {'nb_commandes': 17, 'nb_clients': 4, 'chiffre_affaires': 309.06, 'panier_moyen': 18.18, 'top_products': [('CREAM CUPID HEARTS COAT HANGER', 66.0), ('WHITE METAL LANTERN', 61.019999999999996), ('WHITE HANGING HEART T-LIGHT HOLDER', 45.900000000000006), ('ROTATING SILVER ANGELS T-LIGHT HLDR', 30.6), ('GLASS STAR FROSTED T-LIGHT HOLDER', 25.5), ('HAND WARMER UNION JACK', 22.2), ('HAND WARMER RED POLKA DOT', 22.2), ('KNITTED UNION FLAG HOT WATER BOTTLE', 20.34), ('SET 7 BABUSHKA NESTING BOXES', 15.3)], 'region_metrics': {'France': 112.13999999999999, 'Belgique': 62.68000000000001, 'Allemagne': 89.84, 'Espagne': 44.4}}
+[2026-06-22T22:18:16.714+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-22T22:18:16.746+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=ecommerce_sales_pipeline, task_id=load_data, execution_date=20260622T221810, start_date=20260622T221816, end_date=20260622T221816
+[2026-06-22T22:18:16.789+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-22T22:18:16.828+0000] {taskinstance.py:3482} INFO - 4 downstream tasks scheduled from follow-on schedule check
+[2026-06-22T22:18:16.832+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

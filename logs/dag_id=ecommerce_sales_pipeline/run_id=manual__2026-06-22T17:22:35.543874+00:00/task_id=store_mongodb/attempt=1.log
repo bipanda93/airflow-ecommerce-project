@@ -1,0 +1,20 @@
+[2026-06-22T17:22:46.441+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-22T17:22:46.492+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecommerce_sales_pipeline.store_mongodb manual__2026-06-22T17:22:35.543874+00:00 [queued]>
+[2026-06-22T17:22:46.509+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecommerce_sales_pipeline.store_mongodb manual__2026-06-22T17:22:35.543874+00:00 [queued]>
+[2026-06-22T17:22:46.510+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2026-06-22T17:22:46.528+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): store_mongodb> on 2026-06-22 17:22:35.543874+00:00
+[2026-06-22T17:22:46.536+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=422) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-22T17:22:46.537+0000] {standard_task_runner.py:63} INFO - Started process 423 to run task
+[2026-06-22T17:22:46.536+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ecommerce_sales_pipeline', 'store_mongodb', 'manual__2026-06-22T17:22:35.543874+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/ecommerce_sales_pipeline.py', '--cfg-path', '/tmp/tmpz3eqhjww']
+[2026-06-22T17:22:46.538+0000] {standard_task_runner.py:91} INFO - Job 24: Subtask store_mongodb
+[2026-06-22T17:22:46.607+0000] {task_command.py:426} INFO - Running <TaskInstance: ecommerce_sales_pipeline.store_mongodb manual__2026-06-22T17:22:35.543874+00:00 [running]> on host e1104674939d
+[2026-06-22T17:22:46.711+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ecommerce_sales_pipeline' AIRFLOW_CTX_TASK_ID='store_mongodb' AIRFLOW_CTX_EXECUTION_DATE='2026-06-22T17:22:35.543874+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-22T17:22:35.543874+00:00'
+[2026-06-22T17:22:46.712+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-22T17:22:46.828+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-06-22T17:22:46.870+0000] {logging_mixin.py:188} INFO - Document inséré dans MongoDB : ecommerce_analytics.sales_metrics
+[2026-06-22T17:22:46.873+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-22T17:22:46.874+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-22T17:22:46.891+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=ecommerce_sales_pipeline, task_id=store_mongodb, execution_date=20260622T172235, start_date=20260622T172246, end_date=20260622T172246
+[2026-06-22T17:22:46.925+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-22T17:22:46.950+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-22T17:22:46.952+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

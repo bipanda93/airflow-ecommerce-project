@@ -1,0 +1,22 @@
+[2026-06-22T22:18:15.250+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-22T22:18:15.313+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecommerce_sales_pipeline.check_data manual__2026-06-22T22:18:10.468434+00:00 [queued]>
+[2026-06-22T22:18:15.333+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecommerce_sales_pipeline.check_data manual__2026-06-22T22:18:10.468434+00:00 [queued]>
+[2026-06-22T22:18:15.333+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2026-06-22T22:18:15.366+0000] {taskinstance.py:2327} INFO - Executing <Task(BranchPythonOperator): check_data> on 2026-06-22 22:18:10.468434+00:00
+[2026-06-22T22:18:15.376+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1636) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-22T22:18:15.377+0000] {standard_task_runner.py:63} INFO - Started process 1637 to run task
+[2026-06-22T22:18:15.376+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ecommerce_sales_pipeline', 'check_data', 'manual__2026-06-22T22:18:10.468434+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/ecommerce_sales_pipeline.py', '--cfg-path', '/tmp/tmpigzn70ay']
+[2026-06-22T22:18:15.379+0000] {standard_task_runner.py:91} INFO - Job 28: Subtask check_data
+[2026-06-22T22:18:15.439+0000] {task_command.py:426} INFO - Running <TaskInstance: ecommerce_sales_pipeline.check_data manual__2026-06-22T22:18:10.468434+00:00 [running]> on host e1104674939d
+[2026-06-22T22:18:15.548+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ecommerce_sales_pipeline' AIRFLOW_CTX_TASK_ID='check_data' AIRFLOW_CTX_EXECUTION_DATE='2026-06-22T22:18:10.468434+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-22T22:18:10.468434+00:00'
+[2026-06-22T22:18:15.549+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-22T22:18:15.562+0000] {baseoperator.py:399} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2026-06-22T22:18:15.578+0000] {python.py:237} INFO - Done. Returned value was: load_data
+[2026-06-22T22:18:15.579+0000] {branch.py:36} INFO - Branch into load_data
+[2026-06-22T22:18:15.580+0000] {skipmixin.py:178} INFO - Following branch load_data
+[2026-06-22T22:18:15.606+0000] {skipmixin.py:246} INFO - Skipping tasks [('stop_pipeline', -1)]
+[2026-06-22T22:18:15.638+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-22T22:18:15.666+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=ecommerce_sales_pipeline, task_id=check_data, execution_date=20260622T221810, start_date=20260622T221815, end_date=20260622T221815
+[2026-06-22T22:18:15.683+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-22T22:18:15.725+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-22T22:18:15.728+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
